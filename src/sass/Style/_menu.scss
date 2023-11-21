@@ -3,124 +3,130 @@
 .main-overlay{
   background: linear-gradient(
     rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-     url('/images/background.png') no-repeat;
+    url('/images/background.png') no-repeat;
   background-size: cover;
   
   
    
 
 }
+
 .overlay {
-    padding: 30px 20% 43px 20%;
+  padding: 30px 20% 43px 20%;
+  display: flex;
+  justify-content: space-between;
+    
+    
+}
+  
+.logo {
+  text-decoration: none;
+  color: $color-white;
+  font-size: 35px;
+  font-weight: 1000;
+  word-spacing: 10px;
+  letter-spacing: 7px;
+  
+  p {
+    font-size: 15px;
+    margin-top: 0;
+    font-weight: 500;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    padding-left: 5px;
+
+  }
+}
+// nav pages 
+.navbar-pages {
+  padding: 10px 0;
+    
+  margin-left: auto;
+    
+  ul {
+    list-style-type: none;
     display: flex;
-    justify-content: space-between;
-    
+    margin: 0;
+      
+
     
   }
   
-  .logo {
+  li {
+    display: inline-block;
+    margin-left: 20px;
+      
+  }
+  
+  a {
     text-decoration: none;
-    color: $color-white; 
-    font-size: 35px;
-    font-weight: 1000;
-    word-spacing: 10px;
-    letter-spacing: 7px;
-  
-    p {
-      font-size: 15px;
-      margin-top: 0;
-      font-weight: 500;
-      word-spacing: 5px;
-      letter-spacing: 2px;
-      padding-left: 5px;
-
-    }
-  }
-  // pages 
-  .navbar-pages {
-    padding: 10px 0; 
-    
-    margin-left: auto;    
-    
-    ul {
-      list-style-type: none;
-      display: flex;
-      margin: 0;
-      
-
-    
-    }
-  
-    li {
-      display: inline-block;
-      margin-left: 20px;
-      
-    }
-  
-    a {
-      text-decoration: none;
-      color: $color-white;
-      opacity: 0.5;
-      &:hover{
-        opacity: 1;
-        transition: 0.5;
-      }
-    }
-  }
-
-  //header
-  .menu-header {
-    padding: 60px 19%;
-    position: relative;
-  }
-  
-  .menu {
-    font-size: 40px;
-  
-    h1 {
-      color: $color-main;
-      letter-spacing: 10px;
-    }
-  
-    .original-taste {
-      text-align: end;
-      margin-top: -70px;
-    }
-  
-    
-    &::after {
-      content: "";
-      background-color: $color-main;
-      position: absolute;
-      bottom: 45%;
-      left: 50%;
-      transform: translateX(-50%);
-      height: 6px;
-      width: 13%;
-    }
-  }
-
-  // discover
-
-  .menu-discover {
-    text-align: center;
     color: $color-white;
-    font-size: 30px;
-    letter-spacing: 5px;
-    p{
+    opacity: 0.5;
+
+    &:hover{
+      opacity: 1;
+      transition: 0.5;
+    }
+  }
+}
+
+//header
+.menu-header {
+  padding: 60px 19%;
+  position: relative;
+}
+  
+.menu {
+  font-size: 40px;
+  
+  h1 {
+    color: $color-main;
+    letter-spacing: 10px;
+  }
+  
+  .original-taste {
+    text-align: end;
+    margin-top: -70px;
+  }
+  
+    
+  &::after {
+    content: "";
+    background-color: $color-main;
+    position: absolute;
+    bottom: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 6px;
+    width: 13%;
+  }
+}
+
+// discover
+
+.menu-discover {
+  text-align: center;
+  color: $color-white;
+  font-size: 30px;
+  letter-spacing: 5px;
+
+  p{
     margin-top: 180px;
     position: relative;
-    }
-    i {
-     transform: translate(-50%, -50%);
-     position: absolute;
-     font-size: 35px;
-     cursor: pointer;
-     &:hover{
-        color: $color-main;
-        transition: 0.5;
-     }
-        
-    }
   }
+    
+  i {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: $color-white;
+    font-size: 35px;
+    cursor: pointer;
+
+    &:hover{
+      color: $color-main;
+      transition: 0.5;
+    }
+        
+  }
+}
   
