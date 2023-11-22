@@ -18,7 +18,7 @@ class Product {
     thisProduct.element = utils.createDOMFromHTML(generatedHTML);
 
 
-    thisProduct.listProductContainer = document.querySelectorAll(select.containerOf.listProduct);
+    thisProduct.listProductContainer = document.querySelector(select.containerOf.listProduct);
 
 
     thisProduct.listProductContainer.appendChild(thisProduct.element);
