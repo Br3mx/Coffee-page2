@@ -1,3 +1,43 @@
 .home-page {
   padding: 10px 20% 43px 20%;
 }
+
+.article-products {
+    text-align: center;
+    flex-wrap: nowrap;
+  }
+  
+  .column {
+    padding: 10px 0 20px 0;
+    box-sizing: border-box;
+  }
+  .product-img {
+    text-align: right;
+}
+  .text-products {
+    text-align: left;
+  }
+  .article-products:nth-of-type(2n){
+    .row {
+        flex-direction: row-reverse;
+    }
+    .text-products {
+        margin-right: 0;
+        padding-right: 0;
+        text-align: left;
+        padding-left: 45px;
+    }
+    .product-img {
+        text-align: left;
+        
+    }
+ }
+.product-img img{
+    
+    height: 90%;
+    width: 90%;
+    
+}
+
+
+
