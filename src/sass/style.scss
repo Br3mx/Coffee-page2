@@ -1,9 +1,20 @@
-@import 'Style/variables';
-@import 'Style/layout';
-@import 'Style/menu';
 @import 'Style/normalize';
+
+// Bootstrap
+
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "bootstrap/utilities";
+@import "bootstrap/grid";
+// style
+
+@import 'Style/variables';
 @import 'Style/typography';
 @import 'Style/global.scss';
+@import 'Style/layout';
+@import 'Style/menu';
+
 @import 'pages/contact';
 @import 'pages/home';
 @import 'pages/products';

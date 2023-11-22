@@ -48,11 +48,12 @@
     <!--Pages-->
     <div id="pages">
         <section id="home" class="home-page">
-            <div class="home-wrapper">
+            <div class="home-wrapper container">
                 <h1 class="page-title">PRODUCTS</h1>
                 <!--PLACE FOR PRODUCT-->
                 <div class="list-product"></div>
                 <!--END-PRODUCT-->
+            </div>
                 <div class="about-us">
                     <h1 class="page-title about">ABOUT US</h1>
                     <p class="description-about">
@@ -71,15 +72,43 @@
                         &copy; 2023 EL TIGRE inc.
                     </p>
                 </footer>
+        </section>
+        <section id="products">
+            <div class="products-page">
+               <div class="list-product"></div>
             </div>
         </section>
-        <section id="products" class="products-page">
-            <div class="list-product"></div>
-        </section>
-        <section id="contact" class="contact-page">
+        <section id="contact">
+            <div class="contact-page">
+
+            </div>
 
         </section>
     </div>
+    
+    <script id="template-product" type="text/x-handlebars-template">
+        <article class ="article-products">
+            <div class="row">
+                <div class="col-sm-6 col-xs-12">
+                    <div class="text-products">
+                        <h1 class="product-title">{{ id }} {{ name }}</h1>
+                        <div class="products-description">
+                            <p>{{ description }}</p>
+                        </div>
+                        <ul class="product-value">
+                            <li>Roasting: <span>{{ roasting }}</span></li>
+                            <li>Intesnity: <span>{{ intensity }}</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    <div class="product-img">
+                        {{{ images }}}
+                    </div>
+                </div>
+            </div>
+        </article>
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
     <script src="js/app.js" type="module"></script>
 </body>
