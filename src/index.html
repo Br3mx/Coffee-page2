@@ -15,7 +15,7 @@
     <section class="main-overlay">
         <div class="overlay">
                 <div class="navbar-logo">
-                    <a class="logo" href="#home">
+                    <a class="logo" href="#/home">
                         EL TIGRE
                         <p>VENEZUELA COFFEE BEANS</p>
                     </a>
@@ -47,11 +47,12 @@
     </section>
     <!--Pages-->
     <div id="pages">
-        <section id="home" class="home-page">
+        <section id="home" class="home-page page">
             <div class="home-wrapper container">
                 <h1 class="page-title">PRODUCTS</h1>
                 <!--PLACE FOR PRODUCT-->
-                <div class="list-product"></div>
+                <div class="list-product"><img class="rank1-img" src="images/—Pngtree—winner number 1 icon design_5552246.png">
+                <h1 class="most-popular">MOST <br>POPULAR</h1></div>
                 <!--END-PRODUCT-->
             </div>
                 <div class="about-us">
@@ -73,14 +74,15 @@
                     </p>
                 </footer>
         </section>
-        <section id="products">
+        <section id="products" class="page">
             <div class="products-page">
-               <div class="list-product"></div>
+                <div class="list-product2"><img class="rank1-img" src="images/—Pngtree—winner number 1 icon design_5552246.png">
+                    <h1 class="most-popular">MOST <br>POPULAR</h1></div>
             </div>
         </section>
-        <section id="contact">
+        <section id="contact" class="page">
             <div class="contact-page">
-
+                
             </div>
 
         </section>
@@ -95,8 +97,9 @@
                             <p>{{ description }}</p>
                         </div>
                         <ul class="product-value">
-                            <li>Roasting: <span>{{ roasting }}</span></li>
-                            <li>Intesnity: <span>{{ intensity }}</span></li>
+                            <li>ROASTING: <span>{{ roasting }}</span></li>
+                            
+                            <li>INTENSITY: <span>{{ intensity }}</span></li>
                         </ul>
                     </div>
                 </div>

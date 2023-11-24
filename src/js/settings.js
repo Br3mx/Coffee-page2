@@ -5,6 +5,7 @@ export const select = {
   containerOf: {
     pages: '#pages',
     listProduct: '.list-product',
+    
   },
   nav: {
     links: '.nav-links',
@@ -12,13 +13,13 @@ export const select = {
 };
 
 export const classNames = {
-    nav: {
-        active: 'active',
-    },
-    pages: {
-        active: 'active',
-    }
-}
+  nav: {
+    active: 'active',
+  },
+  pages: {
+    active: 'active',
+  }
+};
 
 export const settings = {
   db: {

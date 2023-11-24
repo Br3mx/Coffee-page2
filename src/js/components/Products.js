@@ -19,8 +19,7 @@ class Product {
 
 
     thisProduct.listProductContainer = document.querySelector(select.containerOf.listProduct);
-
-
+    
     thisProduct.listProductContainer.appendChild(thisProduct.element);
 
   }
