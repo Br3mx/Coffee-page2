@@ -9,7 +9,7 @@ export const select = {
   },
   nav: {
     links: '.nav-links',
-  }
+  },
 };
 
 export const classNames = {

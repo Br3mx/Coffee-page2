@@ -51,7 +51,7 @@
             <div class="home-wrapper container">
                 <h1 class="page-title">PRODUCTS</h1>
                 <!--PLACE FOR PRODUCT-->
-                <div class="list-product"><img class="rank1-img" src="images/—Pngtree—winner number 1 icon design_5552246.png">
+                <div class="list-product"><img class="rank1-img" src="images/—Pngtree—winner number 1 icon design_5552246.png" alt="">
                 <h1 class="most-popular">MOST <br>POPULAR</h1></div>
                 <!--END-PRODUCT-->
             </div>
@@ -76,16 +76,64 @@
         </section>
         <section id="products" class="page">
             <div class="products-page">
-                <div class="list-product"><img class="rank1-img" src="images/—Pngtree—winner number 1 icon design_5552246.png">
+                <h1 class="page-title">PRODUCTS</h1>
+                <div class="list-product products-wrapper container"><img class="rank1-img" src="images/—Pngtree—winner number 1 icon design_5552246.png" alt="">
                     <h1 class="most-popular">MOST <br>POPULAR</h1></div>
+                    <footer>
+                        <p class="website-footer">
+                            &copy; 2023 EL TIGRE inc.
+                        </p>
+                    </footer>
             </div>
         </section>
         <section id="contact" class="page">
             <div class="contact-page">
-                
+                <h1 class="page-title">CONTACT US</h1>
+                <section>
+                    <form id="myForm" class="form-section">
+                        <p>NAME</p>
+                        <input class="input name" type="text" maxlength="15" placeholder="">
+                        <p>TITLE</p>
+                        <input class="input title" type="text" maxlength="30" placeholder="">
+                        <p>MESSAGE</p>
+                        <textarea class="input message" rows="10" cols="50" placeholder="" maxlength="300"></textarea>
+                        <br>
+                        <button class="btn" type="submit">SUBMIT</button>
+                    </form>
+                </section>
+                <footer>
+                    <p class="website-footer">
+                        &copy; 2023 EL TIGRE inc.
+                    </p>
+                </footer>
             </div>
-
         </section>
+        <script>
+            // Po załadowaniu strony ustaw wartości pól na puste
+            window.addEventListener('load', function() {
+                document.querySelector('.input.name').value = '';
+                document.querySelector('.input.title').value = '';
+                document.querySelector('.input.message').value = '';
+            });
+            document.getElementById('myForm').addEventListener('submit', function(event) {
+              event.preventDefault(); // Zatrzymaj domyślne zachowanie formularza
+        
+              // Uzyskaj dostęp do danych formularza
+              const name = document.querySelector('.input.name').value;
+              const title = document.querySelector('.input.title').value;
+              const message = document.querySelector('.input.message').value;
+        
+              // Utwórz obiekt z danymi
+              const formData = {
+                name: name,
+                title: title,
+                message: message
+              };
+        
+              // Wyświetl dane w konsoli
+              console.log(formData);
+            });
+          </script>
     </div>
     <script id="template-product" type="text/x-handlebars-template">
         <article class ="article-products">

@@ -1,0 +1,65 @@
+.form-section {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+
+  p {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+
+  }
+}
+
+.input {
+  width: 500px;
+  height: 50px;
+  border: 3px $color-black solid;
+  caret-color: $color-main;
+
+}
+
+input[type="text"]{
+  text-align: center;
+  font-size: 20px;
+  color: $color-main;
+  padding: 5px;
+}
+
+.message {
+  height: 100px;
+  width: 500px;
+}
+
+textarea {
+  resize: none;
+  line-height: normal;
+  color: $color-main;
+  font-size: 20px;
+  padding: 5px;
+}
+  
+.btn {
+  margin-top: 30px;
+  letter-spacing: 3px;
+  padding: 10px 30px;
+  color: $color-white;
+  background-color: $color-main;
+  font-size: 20px;
+  border: 0px;
+  cursor: pointer;
+  border-radius: 2px;
+
+  &:hover {
+    transition: 1s;
+    color: $color-main;
+    background-color: $color-black;
+    border: 1px solid $color-main;
+  }
+}
+
+input:focus, textarea:focus {
+  border: 2px solid $color-main;
+  box-shadow: 0 0 5px $color-main;
+  outline: none;
+}
