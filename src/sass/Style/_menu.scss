@@ -6,8 +6,7 @@
     url('/images/background.png') no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  
-   
+
 
 }
 
@@ -15,7 +14,7 @@
   padding: 30px 20% 43px 20%;
   display: flex;
   justify-content: space-between;
-    
+  
     
 }
   
@@ -26,7 +25,11 @@
   font-weight: 1000;
   word-spacing: 10px;
   letter-spacing: 7px;
-  
+  &:hover {
+    transition: 0.5;
+    color: $color-main;
+    
+  }
   p {
     font-size: 15px;
     margin-top: 0;
@@ -34,12 +37,14 @@
     word-spacing: 5px;
     letter-spacing: 2px;
     padding-left: 5px;
+   
 
   }
 }
 // nav pages 
 .navbar-pages {
   padding: 10px 0;
+  
     
   margin-left: auto;
     
@@ -71,9 +76,12 @@
 }
 
 //header
+
 .menu-header {
   padding: 60px 19%;
   position: relative;
+  
+ 
 }
   
 .menu {

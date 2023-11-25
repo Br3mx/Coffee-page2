@@ -18,9 +18,19 @@ class Product {
     thisProduct.element = utils.createDOMFromHTML(generatedHTML);
 
 
-    thisProduct.listProductContainer = document.querySelector(select.containerOf.listProduct);
+    //thisProduct.listProductContainer = document.querySelector(select.containerOf.listProduct);
     
-    thisProduct.listProductContainer.appendChild(thisProduct.element);
+    //thisProduct.listProductContainer.appendChild(thisProduct.element);
+    
+    const cloneElement = thisProduct.element.cloneNode(true);
+
+    thisProduct.listProductContainer = document.querySelectorAll(select.containerOf.listProduct);
+
+    thisProduct.homePageStore = thisProduct.listProductContainer[0];
+    thisProduct.productsPageStore = thisProduct.listProductContainer[1];
+    
+    thisProduct.homePageStore.appendChild(thisProduct.element); 
+    thisProduct.productsPageStore.appendChild(cloneElement);
 
   }
 }
