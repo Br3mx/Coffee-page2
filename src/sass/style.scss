@@ -8,12 +8,13 @@
 @import "bootstrap/utilities";
 @import "bootstrap/grid";
 // style
-@import 'Style/media';
+
 @import 'Style/variables';
 @import 'Style/typography';
 @import 'Style/global.scss';
 @import 'Style/layout';
 @import 'Style/menu';
+@import 'Style/media';
 
 @import 'pages/home';
 @import 'pages/products';

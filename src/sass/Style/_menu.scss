@@ -25,11 +25,13 @@
   font-weight: 1000;
   word-spacing: 10px;
   letter-spacing: 7px;
+
   &:hover {
     transition: 0.5;
     color: $color-main;
     
   }
+
   p {
     font-size: 15px;
     margin-top: 0;
