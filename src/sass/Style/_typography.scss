@@ -23,6 +23,7 @@
 
 
 .about {
+  position: relative;
   &::after {
     content: "";
     background-color: $color-main;
