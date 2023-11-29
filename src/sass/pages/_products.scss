@@ -7,6 +7,7 @@
   text-align: center;
   flex-wrap: nowrap;
   padding-bottom: 43px;
+  position: relative;
 }
   
 .column {
@@ -16,6 +17,21 @@
 
 .product-img {
   text-align: right;
+  position: relative;
+  &::after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    transform: translate(-100%);
+
+    border-top: 80px solid $color-main;
+    border-right: 80px solid $color-main;
+    border-bottom: 80px solid transparent;
+    border-left: 80px solid transparent;
+  }
 }
 
 .text-products {
@@ -39,7 +55,30 @@
 
   .product-img {
     text-align: left;
+    position: relative;
+    &::after {
+      content: "";
+      width: 0;
+      height: 0;
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      transform: translate(0%);
+  
+      border-top: 80px solid $color-main;
+      border-right: 80px solid transparent;
+      border-bottom: 80px solid transparent;
+      border-left: 80px solid $color-main;
+    }
         
+  }
+  .product-price {
+    left: 2%;
+    .old-price {
+      left: 50px;
+      top: 20%;
+      
+    }
   }
 }
 
@@ -47,7 +86,8 @@
   box-shadow: 0 0 30px 5px rgb(85, 85, 85);
   height: 90%;
   width: 90%;
-    
+  position: relative;
+  
 }
 
 .row {
@@ -109,14 +149,14 @@
   }
 }
 
-.rank1 {
+.rank1 { 
   img {
-    position: absolute;
-    height: 140%;
-    width: 50%;
-    left: 41%;
-    top: 25%;
-    -webkit-filter: hue-rotate(4deg);
+  position: absolute;
+  height: 140%;
+  width: 50%;
+  left: 41%;
+  top: 25%;
+  -webkit-filter: hue-rotate(4deg);
   }
  
 }
@@ -127,9 +167,38 @@
   color: $color-main;
   font-size: 18px;
   left: 58%;
+}
+// price
 
-  
-
+.product-price {
+  position: absolute;
+  left: 95%;
+  top: 60px;
+  color: $color-white;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1px;
+  .new-price{
+    font-size: 40px;
+    position: absolute;
+    top: 30%;
+    right: 0;
+    left: -20px;
+  }
+  .old-price{
+    position: relative;
+    font-size: 15px;
+    top: 50%;
+    right: 50px;
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: $color-white;
+      height: 1px;
+      width: 40px;
+      transform: translateX(-80%);
+    }
+    
+  }
 
 }
-

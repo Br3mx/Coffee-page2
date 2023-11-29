@@ -69,8 +69,25 @@ const app = {
         thisApp.data.products[productData]);
     }
   },
+  title: function() {
+    const thisApp = this;
+    thisApp.titleContainer = document.querySelector(select.containerOf.menuTitle);
+
+    let randomNumber = Math.floor(Math.random() * 3 + 1);
+    if (randomNumber == 1){
+      thisApp.headerHTML = '<h1>HOME OF</h1><h1 class="original-taste">ORIGINAL TASTES</h1>';
+    } else if (randomNumber == 2){
+      thisApp.headerHTML = '<h1>REAL VENEZUELA</h1><h1 class="original-taste">REAL COFFE</h1>';
+
+    } else if (randomNumber == 3){
+      thisApp.headerHTML = '<h1>TASTE REAL</h1><h1 class="original-taste">VENEZUELA</h1>';
+
+    }
+    thisApp.titleContainer.innerHTML = thisApp.headerHTML;
+  },
   init: function() {
     const thisApp = this;
+    thisApp.title();
     thisApp.initPages();
     thisApp.initData();
     

@@ -5,6 +5,7 @@ export const select = {
   containerOf: {
     pages: '#pages',
     listProduct: '.list-product',
+    menuTitle: '.menu',
     
   },
   nav: {

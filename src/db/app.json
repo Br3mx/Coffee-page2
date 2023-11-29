@@ -12,7 +12,9 @@
        "rank1": [
          "<img src=\"images/—Pngtree—winner number 1 icon design_5552246.png\">"
        ],
-       "rank1-description":"MOST <br> POPULAR"
+       "rank1-description":"MOST <br> POPULAR",
+       "oldPrice": "36$",
+       "newPrice": "25$"
     },
     
     {
@@ -23,7 +25,9 @@
         "intensity": "9/10",
         "images":[
            "<img src=\"images/coffee-2.png\">"
-        ]
+        ],
+        "oldPrice": "29$",
+       "newPrice": "28$"
      }, 
     {
         "id":"03.",
@@ -33,7 +37,9 @@
         "intensity": "7/10",
         "images":[
            "<img src=\"images/coffee-3.png\">"
-        ]
+        ],
+        "oldPrice": "53$",
+       "newPrice": "34$"
      }
     ] 
 }
