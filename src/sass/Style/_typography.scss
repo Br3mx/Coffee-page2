@@ -6,6 +6,7 @@
   color: $color-main;
   letter-spacing: 10px;
   font-weight: bold;
+  position: relative;
 
   &::after {
     content: "";
@@ -15,22 +16,21 @@
     left: 50%;
     transform: translateX(-50%);
     height: 6px;
-    width: 50%;
-      
+    width: 80%;
+    
   }
 } 
+
 
 .about {
   &::after {
     content: "";
     background-color: $color-main;
     position: absolute;
-    bottom: -241%;
+    bottom: -25%;
     left: 50%;
     transform: translateX(-50%);
     height: 6px;
     width: 50%;
-          
   }
 }
-
