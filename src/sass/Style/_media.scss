@@ -12,6 +12,7 @@
 
         
   }
+
   .product-price:nth-of-type(1n) {
     color: $color-main;
     
@@ -22,8 +23,10 @@
     padding: 0;
     left: 3%;
     top: 5%;
+
     .old-price{
       right: 3%;
+
       &::after {
         background-color: $color-black;
       }
@@ -31,6 +34,7 @@
     }
     
   }
+
   .navbar-pages {
     display: flex;
     margin-left: 0;
@@ -79,6 +83,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     &::after {
       display: none;
     }
@@ -201,6 +206,7 @@
           width: 93%;
         }
       }
+
       .product-price {
         left: 0;
         top: 60%;
@@ -209,6 +215,7 @@
         .new-price{
           left: 2%;
         }
+
         .old-price {
           left: 0;
           top: 0;
@@ -239,6 +246,7 @@
       display: none;
 
     }
+
     .description-about {
       text-align: center;
       line-height: 40px;
@@ -294,8 +302,8 @@
     
 }
 @media (max-width:767px) {
-   // menu
-   .navbar-logo {
+  // menu
+  .navbar-logo {
     justify-content: center;
     text-align: center;
     padding: 0;
@@ -307,6 +315,7 @@
 
         
   }
+
   .product-price:nth-of-type(1n) {
     color: $color-main;
     
@@ -317,8 +326,10 @@
     padding: 0;
     left: 3%;
     top: 5%;
+
     .old-price{
       right: 3%;
+
       &::after {
         background-color: $color-black;
       }
@@ -326,6 +337,7 @@
     }
     
   }
+
   .navbar-pages {
     display: flex;
     margin-left: 0;
@@ -374,6 +386,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     &::after {
       display: none;
     }
@@ -496,6 +509,7 @@
           width: 93%;
         }
       }
+
       .product-price {
         left: 0;
         top: 60%;
@@ -504,6 +518,7 @@
         .new-price{
           left: 2%;
         }
+
         .old-price {
           left: 0;
           top: 0;
@@ -534,6 +549,7 @@
       display: none;
 
     }
+
     .description-about {
       text-align: center;
       line-height: 40px;
@@ -541,6 +557,7 @@
       padding: 30px 0 20px 10%;
       margin-right: 10%;
       margin-left: -15%;
+
       p{
         font-size: 25px;
       }
