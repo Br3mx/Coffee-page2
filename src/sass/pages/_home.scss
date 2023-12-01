@@ -1,29 +1,45 @@
 
 // About 
-
+.about {
+  margin-top: 0%;
+}
 .about-us {
   margin: 0 -34%;
   background: linear-gradient(
     rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
     url('/images/about-us.jpg') no-repeat;
   background-size: cover;
-  padding: 30px;
+  padding: 80px;
   background-attachment: fixed;
-  
+}
+.carousel-cell {
+  padding: 20px 10% 43px 20%;
+  object-fit: cover;
+  display: flex;
 
 }
-
+.carousel-img {
+  padding-right: 7%;
+  padding-top: 3%;
+  margin: 0;
+  width: 0;
+}
 .description-about {
-  text-align: left;
+  text-align: justify;
   color: $color-white;
-  font-size: 45px;
-  padding: 30px 29% 43px 25%;
-}
-
-.join-us {
-  text-align: end;
-  padding-right: 20%;
-  margin-top: -70px;
-
+  font-size: 40px;
+  padding: 0 20% 3px 25%;
+  margin-top: 1%;
+  float: right;
+  h3 {
+    font-weight: 50;
+  }
+  strong {
+    font-weight: 600;
+  }
+  p {
+    margin-top: -2%;
+    font-size: 25px;
+  }
 }
 

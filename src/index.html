@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;0,900;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -52,19 +53,46 @@
                 <div id="list-product" class="list-product"></div>
                 <!--END-PRODUCT-->
             </div>
-                <div class="about-us">
+                <section class="about-us">
                     <h1 class="page-title about">ABOUT US</h1>
-                    <p class="description-about">
-                        <i>Who are we? Just a bunch of friends with
-                            a love for a good coffee and desire to create
-                            something new, something original.
-                            <br><br>
-                            Our coffees reflect us - young, wild and free.
-                            We are on the journey of new tastes...
-                        </i>
-                    </p>
-                    <p class="description-about join-us"><i>Join us!</i></p>
-                </div>
+                    <div class="main-carousel home-carousel" data-flickity='{"autoPlay": true, "prevNextButtons": false, "wrapAround": true}'>
+                        <div class="carousel-cell">
+                          <div class="carousel-img"><img src="images/3.png"></div>
+                            <div class="description-about">
+                              <h3>Elizabeth <strong>DOHERTY</strong></h3>
+                              <p><i>Experienced barista from Bahamas.
+                                She says that Venezuela has opened her eyes on coffee.
+                                "It's not about the taste", she says.
+                                "It's all about the feelings".
+                              </i></p>
+                            </div>
+                        </div>
+                        <div class="carousel-cell">
+                            <div class="carousel-img"><img src="images/2.png"></div>
+                          
+                            <div class="description-about">
+                              <h3>Max <strong>Selfish</strong></h3>
+                              <p><i>Max is the austrian barista with years of 
+                                experience from the hotels across the whole Europe.
+                                "Venezuela coffee was a lightening experience for me! 
+                                I have never drink such an amazing coffee!", he says
+                              </i></p>
+                            </div>
+                          </div>
+                        <div class="carousel-cell">
+                            <div class="carousel-img"><img src="images/1.png"></div>
+                            <div class="description-about">
+                              <h3>Ping <strong>Nihao</strong></h3>
+                              <p><i>Ping is the youngest in the team. He doesn't
+                                like calling coffee a mysterious act.
+                                He says, a good coffee is like a mathematical
+                                formula. Once you figured it out, every coffee you make
+                                is a masterpiece.
+                              </i></p>
+                            </div>
+                          </div>
+                    </div>
+                </section>
                 <footer>
                     <p class="website-footer">
                         &copy; 2023 EL TIGRE inc.
@@ -164,6 +192,7 @@
         </article>
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="js/app.js" type="module"></script>
 </body>
 </html>

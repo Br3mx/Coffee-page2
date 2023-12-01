@@ -12,7 +12,25 @@
 
         
   }
+  .product-price:nth-of-type(1n) {
+    color: $color-main;
+    
+    display: block;
+    position: relative;
+    justify-content: center;
+    margin-left: 0;
+    padding: 0;
+    left: 3%;
+    top: 5%;
+    .old-price{
+      right: 3%;
+      &::after {
+        background-color: $color-black;
+      }
 
+    }
+    
+  }
   .navbar-pages {
     display: flex;
     margin-left: 0;
@@ -61,6 +79,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    &::after {
+      display: none;
+    }
 
     img{
       display: block;
@@ -161,7 +182,7 @@
     .column {
       margin: 0;
       padding: 0;
-      display: flex;
+      display: block;
       justify-content: center;
       align-items: center;
 
@@ -172,10 +193,25 @@
       }
 
       .product-img {
-        text-align: center;
+        align-items: center;
+        display: block;
+
 
         img {
           width: 93%;
+        }
+      }
+      .product-price {
+        left: 0;
+        top: 60%;
+        position: relative;
+
+        .new-price{
+          left: 2%;
+        }
+        .old-price {
+          left: 0;
+          top: 0;
         }
       }
             
@@ -192,23 +228,29 @@
           
     }
   }
+
+  // price 
+  
       
   // About 
   .about-us {
+    .carousel-img{
+      
+      display: none;
+
+    }
     .description-about {
       text-align: center;
       line-height: 40px;
-      font-size: 30px;
-      padding: 30px 29% 43px 29%;
-      margin: 0;
+      font-size: 35px;
+      padding: 30px 0 43px 10%;
+      margin-right: 10%;
+      margin-left: -15%;
+      
+      display: block;
+      
     }
 
-    .join-us {
-      padding: 0;
-      margin: 0;
-      text-align: center;
-      color: $color-main;
-    }
   }
 
   // contact
@@ -252,8 +294,8 @@
     
 }
 @media (max-width:767px) {
-  // menu
-  .navbar-logo {
+   // menu
+   .navbar-logo {
     justify-content: center;
     text-align: center;
     padding: 0;
@@ -265,7 +307,25 @@
 
         
   }
+  .product-price:nth-of-type(1n) {
+    color: $color-main;
+    
+    display: block;
+    position: relative;
+    justify-content: center;
+    margin-left: 0;
+    padding: 0;
+    left: 3%;
+    top: 5%;
+    .old-price{
+      right: 3%;
+      &::after {
+        background-color: $color-black;
+      }
 
+    }
+    
+  }
   .navbar-pages {
     display: flex;
     margin-left: 0;
@@ -314,6 +374,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    &::after {
+      display: none;
+    }
 
     img{
       display: block;
@@ -348,7 +411,7 @@
     display: none;
   }
 
-  .rank1-img {
+  .rank1 {
     display: none;
   }
 
@@ -414,7 +477,7 @@
     .column {
       margin: 0;
       padding: 0;
-      display: flex;
+      display: block;
       justify-content: center;
       align-items: center;
 
@@ -425,10 +488,25 @@
       }
 
       .product-img {
-        text-align: center;
+        align-items: center;
+        display: block;
+
 
         img {
           width: 93%;
+        }
+      }
+      .product-price {
+        left: 0;
+        top: 60%;
+        position: relative;
+
+        .new-price{
+          left: 2%;
+        }
+        .old-price {
+          left: 0;
+          top: 0;
         }
       }
             
@@ -445,23 +523,32 @@
           
     }
   }
+
+  // price 
+  
       
   // About 
   .about-us {
+    .carousel-img{
+      
+      display: none;
+
+    }
     .description-about {
       text-align: center;
       line-height: 40px;
       font-size: 30px;
-      padding: 30px 29% 43px 29%;
-      margin: 0;
+      padding: 30px 0 20px 10%;
+      margin-right: 10%;
+      margin-left: -15%;
+      p{
+        font-size: 25px;
+      }
+      
+      display: block;
+      
     }
 
-    .join-us {
-      padding: 0;
-      margin: 0;
-      text-align: center;
-      color: $color-main;
-    }
   }
 
   // contact
@@ -500,6 +587,7 @@
       background-color: $color-black;
       font-size: 15px;
     }
-  }
 
+  }
+    
 }
