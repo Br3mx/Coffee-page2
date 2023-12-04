@@ -131,33 +131,33 @@
                 </footer>
             </div>
         </section>
-        <script>
-            // Po załadowaniu strony ustaw wartości pól na puste
-            window.addEventListener('load', function() {
-                document.querySelector('.input.name').value = '';
-                document.querySelector('.input.title').value = '';
-                document.querySelector('.input.message').value = '';
-            });
-            document.getElementById('myForm').addEventListener('submit', function(event) {
-              event.preventDefault(); // Zatrzymaj domyślne zachowanie formularza
-        
-              // Uzyskaj dostęp do danych formularza
-              const name = document.querySelector('.input.name').value;
-              const title = document.querySelector('.input.title').value;
-              const message = document.querySelector('.input.message').value;
-        
-              // Utwórz obiekt z danymi
-              const formData = {
-                name: name,
-                title: title,
-                message: message
-              };
-        
-              // Wyświetl dane w konsoli
-              console.log(formData);
-            });
-          </script>
     </div>
+    <script>
+        // Po załadowaniu strony ustaw wartości pól na puste
+        window.addEventListener('load', function() {
+            document.querySelector('.input.name').value = '';
+            document.querySelector('.input.title').value = '';
+            document.querySelector('.input.message').value = '';
+        });
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+          event.preventDefault(); // Zatrzymaj domyślne zachowanie formularza
+    
+          // Uzyskaj dostęp do danych formularza
+          const name = document.querySelector('.input.name').value;
+          const title = document.querySelector('.input.title').value;
+          const message = document.querySelector('.input.message').value;
+    
+          // Utwórz obiekt z danymi
+          const formData = {
+            name: name,
+            title: title,
+            message: message
+          };
+    
+          // Wyświetl dane w konsoli
+          console.log(formData);
+        });
+      </script>
     <script id="template-product" type="text/x-handlebars-template">
         <article class ="article-products">
             <div class="row">
